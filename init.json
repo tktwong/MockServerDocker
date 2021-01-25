@@ -1,0 +1,82 @@
+[
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/users",
+      "body": {
+        "name": "Chan Tai Man",
+        "dob": "1990-01-01",
+        "gender": "male",
+        "address": "MSC"
+      }
+    },
+    "httpResponse": {
+      "headers": {
+        "content-type": ["application/json"]
+      },
+      "body": {
+        "id": 1,
+        "name": "Chan Tai Man",
+        "dob": "1990-01-01",
+        "gender": "male",
+        "address": "MSC"
+      },
+      "statusCode": 200,
+      "delay": {
+        "timeUnit": "SECONDS",
+        "value": 1
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/users"
+    },
+    "httpResponse": {
+      "headers": {
+        "content-type": ["application/json"]
+      },
+      "body": [
+        {
+          "id": 1,
+          "name": "Chan Tai Man",
+          "dob": "1990-01-01",
+          "gender": "male",
+          "address": "MSC"
+        }
+      ],
+      "statusCode": 200,
+      "delay": {
+        "timeUnit": "SECONDS",
+        "value": 1
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "PUT",
+      "path": "/users/1",
+      "body": {
+        "address": "KITECT"
+      }
+    },
+    "httpResponse": {
+      "headers": {
+        "content-type": ["application/json"]
+      },
+      "body": {
+        "id": 1,
+        "name": "Chan Tai Man",
+        "dob": "1990-01-01",
+        "gender": "male",
+        "address": "KITECT"
+      },
+      "statusCode": 200,
+      "delay": {
+        "timeUnit": "SECONDS",
+        "value": 1
+      }
+    }
+  }
+]
