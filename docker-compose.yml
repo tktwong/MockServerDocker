@@ -1,6 +1,6 @@
 version: "3.7"
 services:
   mock-server:
-    build: .
+    image: tktwong/mock-server
     ports:
       - 1080:1080
