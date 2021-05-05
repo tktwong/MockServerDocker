@@ -6,4 +6,3 @@ services:
       - 8080:1080
     environment:
       MOCKSERVER_PROPERTY_FILE: mockserver.properties
-      MOCKSERVER_INITIALIZATION_JSON_PATH: init.json
