@@ -1,8 +1,6 @@
 version: "3.7"
 services:
   mock-server:
-    image: mockserver/mockserver:mockserver-snapshot
+    build: .
     ports:
-      - 8080:1080
-    environment:
-      MOCKSERVER_PROPERTY_FILE: mockserver.properties
+      - 1080:1080
