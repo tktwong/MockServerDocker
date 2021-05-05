@@ -5,5 +5,5 @@ services:
     ports:
       - 8080:1080
     environment:
-      MOCKSERVER_PROPERTY_FILE: /config/mockserver.properties
-      MOCKSERVER_INITIALIZATION_JSON_PATH: /config/init.json
+      MOCKSERVER_PROPERTY_FILE: ./mockserver.properties
+      MOCKSERVER_INITIALIZATION_JSON_PATH: ./init.json
